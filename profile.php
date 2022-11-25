@@ -3,7 +3,7 @@
   $isIndex = 0;
   if(!(array_key_exists('teacher_id',$_SESSION) && isset($_SESSION['teacher_id']))) {
     session_destroy();
-    if(!$isIndex) header('Location: index.php');
+    if(!$isIndex) header('Location: index.html');
   }
 ?>
 <?php include 'php/node_class.php'; ?>
@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Online Attendance</a>
+          <a class="navbar-brand" href="index.html">Online Attendance</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
